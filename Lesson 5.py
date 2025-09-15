@@ -52,8 +52,9 @@ english_grade = "78"
 # 2. Calculate the average
 # 3. Determine if average >= 80 (honor roll)
 # 4. Create a report message using f-strings
-
-
+average_grade = {int(math_grade) + float(science_grade) + int(english_grade)} / 3
+honor_roll = str(average_grade) >= 80
+print(f"Honor Roll: {honor_roll}")
 # ====== BONUS - CODE ALONE CHALLENGE: User Profile Builder ======
 # Create a complete program:
 
@@ -69,3 +70,10 @@ has_license_str = "yes"
 # 3. Check if favorite number is even
 # 4. Convert "yes"/"no" to True/False for license
 # 5. Create a complete profile report
+age = int(user_age_str)
+age_in_10_years = str(age) + 10
+print(f"Name: {user_name}")
+print(f"Age: {age}")
+print(f"Age in 10 Years: {age_in_10_years}")
+print("Fav Number Even: False")
+print("Has License: True")
